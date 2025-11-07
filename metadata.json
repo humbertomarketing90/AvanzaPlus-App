@@ -1,0 +1,7 @@
+{
+  "name": "AVANZAPLUS",
+  "description": "App de educación y preparación crediticia de AVANZAPLUS para microemprendedores.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

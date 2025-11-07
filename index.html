@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AVANZAPLUS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class', // Habilitar modo oscuro
+        theme: {
+          extend: {
+            fontFamily: {
+              'poppins': ['Poppins', 'sans-serif'],
+            },
+            colors: {
+              'primary': '#2BB673',
+              'primary-dark': '#229A61',
+              'secondary': '#3AA0FF',
+              'danger': '#F87171',
+              'warning': '#FBBF24',
+              'fondo': '#F8FAFB', // Un gris muy claro para el fondo
+              'texto-oscuro': '#0B1B2B',
+              'texto-sutil': '#6B7280',
+              'borde-sutil': '#E6EEF6',
+              // Colores para modo oscuro
+              'dark-fondo': '#0B1B2B',
+              'dark-surface': '#172A3A',
+              'dark-texto': '#E0E0E0',
+              'dark-texto-sutil': '#A0AEC0',
+              'dark-borde': '#2D3748',
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.28.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-fondo dark:bg-dark-fondo">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
